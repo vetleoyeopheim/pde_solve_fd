@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 10 18:58:02 2021
 
-@author: Vetle
+"""
+@author: Vetle Øye Opheim
 """
 
 
@@ -11,7 +9,7 @@ import numpy as np
 
 
 class PDESolver():
-    
+    """ Currently only solves the 1D heat equation by the finite differences method"""
     def __init__(self):
         pass
 

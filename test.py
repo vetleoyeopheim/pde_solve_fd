@@ -1,13 +1,10 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Nov 11 22:04:15 2021
-
 @author: Vetle
 """
 
 
 import numpy as np
-import solver
+import heatequation
 
 x_range = 10
 t_range = 10

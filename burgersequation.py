@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Nov 16 18:56:41 2021
 
-@author: Vetle
+"""
+@author: Vetle Øye Opheim
 """
 
 import numpy as np
@@ -79,26 +77,3 @@ class BurgersEquation:
                 arr[x] = row
             sol[t] = row
         return sol
-        
-"""
-dx = 0.25
-dt = 0.01
-t_range = 10
-x_range = 10
-bval = [0,1]
-v = 0
-init_cond = np.ones(int(x_range / dx))
-be = BurgersEquation()
-sol = be.burgers_eq_1d(init_cond, t_range, x_range, dx, dt, bval, v)
-plt.plot(sol[950])
-"""
-
-ranges = [10,10,10]
-deltas = [0.01,0.2,0.2]
-v = 0
-bval = [[0,1],[0,1]]
-init_cond = np.ones((int(ranges[1] / deltas[1]), int(ranges[2] / deltas[2])))
-    
-be = BurgersEquation()
-sol = be.burgers_eq_2d(init_cond, ranges, deltas, bval, v)
-plt.plt(sol[100][10])
